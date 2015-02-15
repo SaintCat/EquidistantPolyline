@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="viewPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.saintcat.client.interpolcurves.CurveController">
+    <children>
+      <ScrollPane layoutX="14.0" layoutY="14.0" prefHeight="398.0" prefViewportHeight="563.0" prefViewportWidth="655.0" prefWidth="804.0">
+         <content>
+            <AnchorPane fx:id="paintPanel" layoutX="14.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="798.0">
+               <cursor>
+                  <Cursor fx:constant="CROSSHAIR" />
+               </cursor>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Button layoutX="62.0" layoutY="421.0" mnemonicParsing="false" onAction="#newPolAction" prefHeight="33.0" prefWidth="158.0" text="Сгенерировать" />
+      <Label fx:id="resultLabel" layoutX="238.0" layoutY="412.0" prefHeight="50.0" prefWidth="447.0" text="Результат">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+    </children>
+</AnchorPane>
